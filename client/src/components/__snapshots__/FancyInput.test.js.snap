@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FancyInput should render correctly 1`] = `
+<div
+  className="input-container"
+>
+  <input
+    className="input-field"
+    placeholder="Placeholder"
+    type="text"
+  />
+  <span
+    className="focus-border"
+  />
+</div>
+`;

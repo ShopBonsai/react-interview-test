@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressiveImage should render correctly 1`] = `
+Array [
+  <div
+    className="skeleton-wrapper"
+  >
+    <div
+      className="placeholder"
+    >
+      <div
+        className="animated-background"
+      />
+    </div>
+  </div>,
+  <img
+    alt="Product image cap"
+    className="media-object"
+    onLoad={[Function]}
+  />,
+]
+`;

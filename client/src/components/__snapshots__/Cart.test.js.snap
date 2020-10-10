@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart should render correctly 1`] = `
+<div
+  className="cart-container"
+>
+  <p>
+    <strong>
+      Your 🛒 with your beautiful products 😉
+    </strong>
+  </p>
+  <hr />
+  <div
+    className="cart-product-container"
+  >
+    <img />
+    <div
+      className="card-product-description"
+    >
+      <p>
+        test
+      </p>
+      <button
+        className="remove"
+        id="1"
+        onClick={[Function]}
+      >
+        Remove item
+      </button>
+    </div>
+  </div>
+  <hr />
+  <button
+    onClick={[Function]}
+  >
+    Finish Purchase
+  </button>
+</div>
+`;

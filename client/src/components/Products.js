@@ -1,7 +1,11 @@
-import React, { Component } from 'react';
-import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media } from 'reactstrap';
-import { gql } from 'apollo-boost';
-import { Query } from 'react-apollo';
+import React, { useState, useContext } from 'react';
+import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media, Spinner } from 'reactstrap';
+import { useQuery } from '@apollo/react-hooks';
+import gql from 'graphql-tag';
+import Context from '../context';
+import ProgressiveImage from './ProgressiveImage';
+import FancyInput from './FancyInput';
+import Card from './Cart';
 import './styles.css';
 
 const GET_PRODUCTS = gql`
@@ -22,59 +26,59 @@ const GET_PRODUCTS = gql`
   }
 `;
 
-const withProducts = Component => props => {
+const ProductsList = () => {
+  const [productFilter, setProductFilter] = useState('');
+  const { loading, data } = useQuery(GET_PRODUCTS);
+  const { state, dispatch } = useContext(Context);
+  const { productsInCart } = state;
+  let merchants;
+  if (loading) return <div className="container"><h4> <Spinner />Hold your horses mate, we are loading awesome stuff here.</h4></div>
+  if (data) merchants = data.merchants;
   return (
-    <Query query={GET_PRODUCTS}>
-      {({ loading, data }) => {
-        return (
-          <Component merchantsLoading={loading} merchants={data && data.merchants} {...props} />
-        );
-      }}
-    </Query>
-  );
-};
-
-class ProductsList extends Component {
-  
-    showProducts() {
-      const { merchants, merchantsLoading } = this.props;
-  
-      if (!merchantsLoading && merchants && merchants.length > 0) {
-        return merchants.map(({products}) => {
-          return products && products.length > 0 && products.map(product => {
-            const { color, description, image, name, price, size } = product
-            return (
-              <Media key={product.id} className="product-card">
-              <Media left href="#">
-                <Media object src={image} alt="Product image cap" />
+    <>
+      <div className="container">
+        <FancyInput placeholder="Filter by product name" onChange={({ target: { value }}) => setProductFilter(value)} />
+      </div>
+      <Card />
+      {data ? (
+        <div className="container product-container">
+          {merchants.map(({ products }) => (
+            products.filter(product =>
+              product.name.toLowerCase().includes(productFilter.toLowerCase())).map(({ id, color, description, image, name, price, size }) => (
+                <Media key={id} className="product-card">
+                  <Media left href="#">
+                    <ProgressiveImage src={image} />
+                  </Media>
+                  <CardBody>
+                    <CardTitle style={{fontWeight: 600}}>{name}</CardTitle>
+                    <CardTitle>Price: {price}</CardTitle>
+                    <CardSubtitle>Color: {color}</CardSubtitle>
+                    <CardSubtitle>Size: {size}</CardSubtitle>
+                    <CardText>Details: {description}</CardText>
+                    <Button 
+                      id={id}
+                      name={name}
+                      image={image}
+                      className="buy" 
+                      color="primary" 
+                      size="lg" 
+                      block
+                      onClick={({ target: { id }}) => dispatch({ type: 'ADD_PRODUCT_TO_CART', payload: { id, name, image } })}
+                      disabled={productsInCart.some(product => product.id === id)}
+                    >
+                      Buy
+                    </Button>
+                  </CardBody>
                 </Media>
-                <CardBody>
-                  <CardTitle style={{fontWeight: 600}}>{name}</CardTitle>
-                  <CardTitle>Price: {price}</CardTitle>
-                  <CardSubtitle>Color: {color}</CardSubtitle>
-                  <CardSubtitle>Size: {size}</CardSubtitle>
-                  <CardText>Details: {description}</CardText>
-                  <Button color="primary" size="lg" block>Buy</Button>
-                </CardBody>
-              </Media>
-            );
-          })
-        });
-      } else {
-        return (
-          <div>
-            <h3>No products available</h3>
-          </div>
-        );
-      }
-    }
-  
-    render() {
-      return (
-        <div>
-          {this.showProducts()}
+              )
+            )
+          ))}
         </div>
-      );
-    }
-  }
-  export default withProducts(ProductsList)
+      ) : (
+        <p>something isn't quite right</p>
+      )}
+    </>
+  )
+}
+
+export default ProductsList;

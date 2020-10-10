@@ -1,0 +1,33 @@
+.input-field:focus { outline: none; }
+
+.input-container{
+  float: left; 
+  width: 100%;
+  max-width: 400px; 
+  margin: 40px 0; 
+  position: relative;
+}
+input[type="text"]{
+  color: #333; 
+  width: 100%;
+}
+
+.input-field {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-field ~ .focus-border{
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 2px; 
+  background-color: #3399FF; 
+  transition: 0.4s;
+}
+.input-field:focus ~ .focus-border{
+  width: 100%;
+  transition: 0.4s;
+}
