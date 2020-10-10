@@ -1,0 +1,38 @@
+.cart-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.cart-item-info {
+  padding: 0 10px;
+}
+
+.cart-item-name {
+  font-size: 1rem;
+  color: grey;
+}
+
+.cart-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: darkslategrey;
+  margin-bottom: 10px;
+}
+
+.cart {
+  padding: 10px;
+}
+
+.cart-no-items {
+  font-size: 0.75rem;
+}
+
+.cart-count-info {
+  font-size: 0.75rem;
+}
+
+.checkout-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

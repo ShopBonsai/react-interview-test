@@ -1,7 +1,14 @@
-import ApolloClient from 'apollo-boost';
+import { ApolloClient, createHttpLink } from "@apollo/client";
 
-const client = new ApolloClient({
-  uri: 'http://localhost:3000/graphql'
+import { cache } from "./cache";
+
+const httpLink = createHttpLink({
+  uri: "http://localhost:3000/graphql",
+  credentials: "include",
 });
 
+const client = new ApolloClient({
+  cache,
+  link: httpLink,
+});
 export default client;

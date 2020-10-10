@@ -1,0 +1,12 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list {
+  width: 70%;
+}
+
+.cart {
+  width: 30%;
+}

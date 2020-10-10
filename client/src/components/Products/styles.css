@@ -1,0 +1,26 @@
+.product-card {
+  width: 50%;
+  margin: 30px 50px;
+  cursor: pointer;
+  color: grey;
+  box-shadow: 1px 2px 3px rgba(136, 10, 142, 0.3);
+  width: auto;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.quantity-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
