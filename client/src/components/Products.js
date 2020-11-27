@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media } from 'reactstrap';
 import { gql } from 'apollo-boost';
-import { Query } from 'react-apollo';
-import './styles.css';
+import { Query, Mutation } from 'react-apollo';
+import { GET_CART_PRODUCTS } from './Cart';
+import GTMConstants from '../helpers/GTMConstants';
 
 const GET_PRODUCTS = gql`
   {
@@ -18,6 +19,26 @@ const GET_PRODUCTS = gql`
         size
         image
       }
+    }
+  }
+`;
+
+const ADD_TO_CART_MUTATION = gql`
+  mutation ADD_TO_CART_MUTATION(
+    $productId: String!
+    $name: String!
+    $price: Float!
+    $color: String!
+    $size: String!
+  ) {
+    addToCart(
+      productId: $productId
+      name: $name
+      price: $price
+      color: $color
+      size: $size
+    ) {
+      productId
     }
   }
 `;
@@ -46,7 +67,7 @@ class ProductsList extends Component {
             return (
               <Media key={product.id} className="product-card">
               <Media left href="#">
-                <Media object src={image} alt="Product image cap" />
+                <Media className="product__image" object src={image} alt="Product image cap" />
                 </Media>
                 <CardBody>
                   <CardTitle style={{fontWeight: 600}}>{name}</CardTitle>
@@ -54,7 +75,32 @@ class ProductsList extends Component {
                   <CardSubtitle>Color: {color}</CardSubtitle>
                   <CardSubtitle>Size: {size}</CardSubtitle>
                   <CardText>Details: {description}</CardText>
-                  <Button color="primary" size="lg" block>Buy</Button>
+                  <Mutation 
+                    mutation={ADD_TO_CART_MUTATION}
+                    variables={{ 
+                      productId: product.id,
+                      name: name,
+                      price: price,
+                      color: color,
+                      size: size,
+                    }}
+                    refetchQueries={[{ query: GET_CART_PRODUCTS }]}
+                  >
+                    {(addToCart, { loading, error }) => {
+                      return (
+                        <Button
+                          disabled={loading}
+                          color="primary"
+                          size="lg"
+                          block
+                          onClick={addToCart}
+                          data-gtmclickid={GTMConstants.EVENT_IDS.BUY}
+                        >
+                          {loading ? 'Adding to Cart' : 'Buy'}
+                        </Button>
+                      );
+                    }}
+                  </Mutation>
                 </CardBody>
               </Media>
             );
@@ -71,7 +117,7 @@ class ProductsList extends Component {
   
     render() {
       return (
-        <div>
+        <div className="products">
           {this.showProducts()}
         </div>
       );

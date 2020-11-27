@@ -1,0 +1,45 @@
+.react-interview-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  align-items: stretch;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  
+  margin: 30px auto;
+  cursor: pointer;
+  color: grey;
+  box-shadow: 1px 2px 3px rgba(136,10,142,0.3);
+}
+.cart {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 800px) {
+  .react-interview-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .product-card {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .products {
+    order: 1;
+    flex-grow: 2;
+  }
+
+  .cart {
+    order: 2;
+    margin-left: 30px;
+    flex-grow: 1;
+  }
+}
