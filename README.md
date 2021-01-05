@@ -12,18 +12,12 @@ Your task is to add a new complete working feature that you feel will best demon
 
 **NOTE:** If you are interveiwing for a frontend role, you simply need to make a frontend feature!
 
-Here are some ideas for features that are missing from the app (you can use your own database or consider mockMerchantData.js as a database):
+Here are some ideas for features that were added tot he frontend of the app using mockMerchantData.js as a database:
  - Clicking Buy does SOMETHING! This should add data to the database in a meaningful way and communicate to the user that such an action took place.
  - Ability to select a quantity to buy. The quantity should be stored in the database in a meaningful way, this data should be retrieved and displayed somewhere for the user.
  - Add a profile page to display user-related data. This data should be stored in the database and retrieved.
- - Allow users to login using social media. A record of the user being logged in should be stored in the database, retrieved and displayed (perhaps on a special admin-only page).
  - Select multiple items to buy together. Which items get selected/submitted should be stored meaningfully in the database.
  - Add a cart object to display selected items the user wants to buy. Store this information meaningfully in the database.
- - Organize the shop page for better browsing experience, adding filters for brands/merchants/products.
- - Ability to 'like' an item. Store which items got liked in the database, retrieve this information.
- - Searching for product by name/brand/merchant. Store searches meaningfully in the database.
- - Add loading-images so the screen isn't empty while data is loading. Add page visits and loading times to the database in a meaningful way.
- - Add a react testing-framework and create a test. Record the results in separate database for the QA team!
 
 The following should be noted:
 1. Assume that if a piece of code/function is not working, it is a bug in the app (oh no!)
