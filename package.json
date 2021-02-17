@@ -3,21 +3,32 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "apollo-boost": "^0.4.3",
-    "apollo-server-express": "^2.7.0",
-    "bootstrap": "^4.3.1",
-    "express": "^4.17.1",
-    "graphql": "^14.4.2",
-    "react": "^16.8.6",
-    "react-apollo": "^2.5.8",
-    "react-dom": "^16.8.6",
-    "reactstrap": "^8.0.1"
-  },
   "scripts": {
     "server": "nodemon ./server/server.js",
     "client": "webpack-dev-server --mode development --open",
     "dev": "concurrently \"yarn client\" \"yarn server\""
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.9",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "apollo-server-express": "^2.7.0",
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "history": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
+    "react-use": "^17.1.1",
+    "reactstrap": "^8.0.1",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

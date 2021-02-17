@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   type Merchant {
@@ -32,11 +32,17 @@ const typeDefs = gql`
   type User {
     userId: String
   }
+  type JWT {
+    token: String!
+  }
   type Query {
     merchants: [Merchant!]!
+    user: User
   }
   type Mutation {
     editMerchant(publishedState: Boolean!): Merchant
+    login(username: String!, password: String!): JWT
+    signup(username: String!, password: String!, confirmPassword: String!): JWT
   }
 `;
 

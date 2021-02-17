@@ -1,15 +1,19 @@
-const merchants = [
+{
+  "users": [
+    {
+      "userId": "test-id",
+      "username": "test-user",
+      "password": "$2b$10$knpeRVhP9CIokrSvGOLaku/jimZo3IvoRUHWyJ13RSIsV/67XoHoO"
+    }
+  ],
+  "merchants": [
     {
       "index": 0,
       "guid": "8b36dad9-f5a5-4b35-bfc9-27990a0be2b2",
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-04-22T06:25:51 +04:00",
       "publishedState": false,
-      "brands": [
-        "Pansy Espinoza",
-        "Finley Barron",
-        "Chavez Pope"
-      ],
+      "brands": ["Pansy Espinoza", "Finley Barron", "Chavez Pope"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -84,11 +88,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-10-22T06:49:34 +04:00",
       "publishedState": false,
-      "brands": [
-        "Simone Gallagher",
-        "Christian Short",
-        "Elisa Ellis"
-      ],
+      "brands": ["Simone Gallagher", "Christian Short", "Elisa Ellis"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -141,11 +141,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-06-22T10:35:12 +04:00",
       "publishedState": true,
-      "brands": [
-        "Goldie Lynch",
-        "Miller Bird",
-        "Melanie Conner"
-      ],
+      "brands": ["Goldie Lynch", "Miller Bird", "Melanie Conner"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -187,11 +183,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-11-12T07:37:18 +05:00",
       "publishedState": false,
-      "brands": [
-        "Mullins Estrada",
-        "Merritt Frye",
-        "Hattie Nash"
-      ],
+      "brands": ["Mullins Estrada", "Merritt Frye", "Hattie Nash"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -233,11 +225,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-10-27T09:13:00 +04:00",
       "publishedState": false,
-      "brands": [
-        "Gena Garrison",
-        "Kline Robles",
-        "Liz Edwards"
-      ],
+      "brands": ["Gena Garrison", "Kline Robles", "Liz Edwards"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -279,11 +267,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-02-27T06:34:24 +05:00",
       "publishedState": true,
-      "brands": [
-        "Lynne Parrish",
-        "Moss Hampton",
-        "Alston Santana"
-      ],
+      "brands": ["Lynne Parrish", "Moss Hampton", "Alston Santana"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -314,11 +298,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-01-18T04:16:48 +05:00",
       "publishedState": true,
-      "brands": [
-        "Dominguez Lee",
-        "Naomi Casey",
-        "Alma Robertson"
-      ],
+      "brands": ["Dominguez Lee", "Naomi Casey", "Alma Robertson"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -360,11 +340,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-01-29T06:55:38 +05:00",
       "publishedState": false,
-      "brands": [
-        "Estrada Newman",
-        "Mallory Humphrey",
-        "Deann Carlson"
-      ],
+      "brands": ["Estrada Newman", "Mallory Humphrey", "Deann Carlson"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -406,11 +382,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-04-11T03:32:51 +04:00",
       "publishedState": false,
-      "brands": [
-        "Richardson Anthony",
-        "Roman Foreman",
-        "Anne Reeves"
-      ],
+      "brands": ["Richardson Anthony", "Roman Foreman", "Anne Reeves"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -441,11 +413,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-03-24T07:10:52 +04:00",
       "publishedState": false,
-      "brands": [
-        "Imogene Rodriguez",
-        "Brandi Dunlap",
-        "Bolton Haley"
-      ],
+      "brands": ["Imogene Rodriguez", "Brandi Dunlap", "Bolton Haley"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -520,11 +488,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-08-10T04:49:27 +04:00",
       "publishedState": false,
-      "brands": [
-        "Holloway Harmon",
-        "Jillian David",
-        "Oneill Tillman"
-      ],
+      "brands": ["Holloway Harmon", "Jillian David", "Oneill Tillman"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -577,11 +541,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-04-21T06:46:31 +04:00",
       "publishedState": true,
-      "brands": [
-        "Stokes Talley",
-        "Coleman Mckenzie",
-        "Phelps Bean"
-      ],
+      "brands": ["Stokes Talley", "Coleman Mckenzie", "Phelps Bean"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -634,11 +594,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-12-16T12:16:21 +05:00",
       "publishedState": false,
-      "brands": [
-        "Mandy Sandoval",
-        "Watson Sweeney",
-        "Bethany Payne"
-      ],
+      "brands": ["Mandy Sandoval", "Watson Sweeney", "Bethany Payne"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -702,11 +658,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-09-08T12:50:23 +04:00",
       "publishedState": false,
-      "brands": [
-        "Francisca Knight",
-        "Meyers Harrison",
-        "Leola Compton"
-      ],
+      "brands": ["Francisca Knight", "Meyers Harrison", "Leola Compton"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -770,11 +722,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-02-09T01:38:27 +05:00",
       "publishedState": true,
-      "brands": [
-        "Barlow Morin",
-        "Katy Yates",
-        "Maria Beasley"
-      ],
+      "brands": ["Barlow Morin", "Katy Yates", "Maria Beasley"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -849,11 +797,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-12-31T03:19:31 +05:00",
       "publishedState": true,
-      "brands": [
-        "Elvia Mccarty",
-        "Ingram Powell",
-        "Barry Coleman"
-      ],
+      "brands": ["Elvia Mccarty", "Ingram Powell", "Barry Coleman"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -884,11 +828,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-11-24T09:31:36 +05:00",
       "publishedState": true,
-      "brands": [
-        "Sharpe Grant",
-        "Donovan Trujillo",
-        "Odonnell Whitney"
-      ],
+      "brands": ["Sharpe Grant", "Donovan Trujillo", "Odonnell Whitney"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -941,11 +881,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-07-26T09:40:37 +04:00",
       "publishedState": false,
-      "brands": [
-        "Blake Mcmillan",
-        "Brewer Walters",
-        "Leonor Roberts"
-      ],
+      "brands": ["Blake Mcmillan", "Brewer Walters", "Leonor Roberts"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -976,11 +912,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-02-27T06:41:05 +05:00",
       "publishedState": false,
-      "brands": [
-        "Caroline Butler",
-        "Ofelia Sweet",
-        "Collins Freeman"
-      ],
+      "brands": ["Caroline Butler", "Ofelia Sweet", "Collins Freeman"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1044,11 +976,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-06-17T02:05:34 +04:00",
       "publishedState": false,
-      "brands": [
-        "Cameron Petersen",
-        "Houston Schmidt",
-        "Carolyn Stanton"
-      ],
+      "brands": ["Cameron Petersen", "Houston Schmidt", "Carolyn Stanton"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -1123,11 +1051,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-11-23T10:00:17 +05:00",
       "publishedState": false,
-      "brands": [
-        "Genevieve Nichols",
-        "Clara Robinson",
-        "Wiggins Levine"
-      ],
+      "brands": ["Genevieve Nichols", "Clara Robinson", "Wiggins Levine"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1202,11 +1126,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-05-12T01:51:05 +04:00",
       "publishedState": false,
-      "brands": [
-        "Hess Sharp",
-        "Doyle Slater",
-        "Mays Snider"
-      ],
+      "brands": ["Hess Sharp", "Doyle Slater", "Mays Snider"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -1237,11 +1157,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-06-16T09:57:34 +04:00",
       "publishedState": false,
-      "brands": [
-        "Laurel Lancaster",
-        "Page Thornton",
-        "Owen Reilly"
-      ],
+      "brands": ["Laurel Lancaster", "Page Thornton", "Owen Reilly"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -1283,11 +1199,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-05-08T09:13:28 +04:00",
       "publishedState": true,
-      "brands": [
-        "Morin Ellison",
-        "Erma Campbell",
-        "Sosa Head"
-      ],
+      "brands": ["Morin Ellison", "Erma Campbell", "Sosa Head"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -1318,11 +1230,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-09-14T09:46:41 +04:00",
       "publishedState": true,
-      "brands": [
-        "Marlene Goodwin",
-        "Connie Nolan",
-        "Christie Weaver"
-      ],
+      "brands": ["Marlene Goodwin", "Connie Nolan", "Christie Weaver"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1375,11 +1283,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-08-19T02:32:31 +04:00",
       "publishedState": true,
-      "brands": [
-        "Lane Barr",
-        "Daniel Ayers",
-        "Pratt Riddle"
-      ],
+      "brands": ["Lane Barr", "Daniel Ayers", "Pratt Riddle"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1410,11 +1314,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-08-26T02:43:29 +04:00",
       "publishedState": false,
-      "brands": [
-        "Rodgers Morton",
-        "Leonard Hahn",
-        "Conley Schroeder"
-      ],
+      "brands": ["Rodgers Morton", "Leonard Hahn", "Conley Schroeder"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1478,11 +1378,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-05-10T06:22:33 +04:00",
       "publishedState": true,
-      "brands": [
-        "Sonja Baird",
-        "Lucile Dean",
-        "Mcgee Hale"
-      ],
+      "brands": ["Sonja Baird", "Lucile Dean", "Mcgee Hale"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -1535,11 +1431,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-06-18T11:56:44 +04:00",
       "publishedState": false,
-      "brands": [
-        "William Collins",
-        "Juarez Moss",
-        "Ramona Leon"
-      ],
+      "brands": ["William Collins", "Juarez Moss", "Ramona Leon"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -1570,11 +1462,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-12-22T10:32:59 +05:00",
       "publishedState": false,
-      "brands": [
-        "Kinney Cunningham",
-        "Gould Hansen",
-        "Cash Mcneil"
-      ],
+      "brands": ["Kinney Cunningham", "Gould Hansen", "Cash Mcneil"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1627,11 +1515,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-04-09T05:11:22 +04:00",
       "publishedState": false,
-      "brands": [
-        "Mollie Hunt",
-        "Effie Hicks",
-        "Florence Aguilar"
-      ],
+      "brands": ["Mollie Hunt", "Effie Hicks", "Florence Aguilar"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1695,11 +1579,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-10-06T11:03:09 +04:00",
       "publishedState": false,
-      "brands": [
-        "Bessie Nelson",
-        "Schmidt Nguyen",
-        "Jaime Mason"
-      ],
+      "brands": ["Bessie Nelson", "Schmidt Nguyen", "Jaime Mason"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -1741,11 +1621,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-09-14T06:09:48 +04:00",
       "publishedState": false,
-      "brands": [
-        "Benton Velazquez",
-        "Garrett Knowles",
-        "Perez Hull"
-      ],
+      "brands": ["Benton Velazquez", "Garrett Knowles", "Perez Hull"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -1820,11 +1696,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-04-17T08:21:07 +04:00",
       "publishedState": false,
-      "brands": [
-        "Cohen Byrd",
-        "Mckee Brewer",
-        "Emily Coffey"
-      ],
+      "brands": ["Cohen Byrd", "Mckee Brewer", "Emily Coffey"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -1877,11 +1749,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-03-29T01:45:00 +04:00",
       "publishedState": false,
-      "brands": [
-        "Conner Mcknight",
-        "Mcdonald James",
-        "Holder Keith"
-      ],
+      "brands": ["Conner Mcknight", "Mcdonald James", "Holder Keith"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -1923,11 +1791,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-12-10T07:04:45 +05:00",
       "publishedState": true,
-      "brands": [
-        "Emma Collier",
-        "Gray Mendez",
-        "Dickerson Crane"
-      ],
+      "brands": ["Emma Collier", "Gray Mendez", "Dickerson Crane"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -1969,11 +1833,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-07-29T05:43:16 +04:00",
       "publishedState": true,
-      "brands": [
-        "Harper Crosby",
-        "Wood Gray",
-        "Lowery Workman"
-      ],
+      "brands": ["Harper Crosby", "Wood Gray", "Lowery Workman"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -2015,11 +1875,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-09-09T12:14:30 +04:00",
       "publishedState": false,
-      "brands": [
-        "Rhoda Hensley",
-        "John Vaughn",
-        "Burke Clayton"
-      ],
+      "brands": ["Rhoda Hensley", "John Vaughn", "Burke Clayton"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2094,11 +1950,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-10-21T05:02:34 +04:00",
       "publishedState": true,
-      "brands": [
-        "Dolly Case",
-        "Margie Rush",
-        "Christi Carr"
-      ],
+      "brands": ["Dolly Case", "Margie Rush", "Christi Carr"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2129,11 +1981,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-08-13T05:52:08 +04:00",
       "publishedState": true,
-      "brands": [
-        "Bartlett Cain",
-        "Hood Noble",
-        "Justine Evans"
-      ],
+      "brands": ["Bartlett Cain", "Hood Noble", "Justine Evans"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2175,11 +2023,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-10-05T10:56:05 +04:00",
       "publishedState": true,
-      "brands": [
-        "Murray Wiley",
-        "Eula Wise",
-        "Meyer Bruce"
-      ],
+      "brands": ["Murray Wiley", "Eula Wise", "Meyer Bruce"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2221,11 +2065,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-03-02T01:53:30 +05:00",
       "publishedState": false,
-      "brands": [
-        "Felecia Howell",
-        "Buchanan Hobbs",
-        "Beulah Wagner"
-      ],
+      "brands": ["Felecia Howell", "Buchanan Hobbs", "Beulah Wagner"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2289,11 +2129,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-06-24T11:24:00 +04:00",
       "publishedState": true,
-      "brands": [
-        "Maricela Booth",
-        "Mayo Morales",
-        "Tamika Cohen"
-      ],
+      "brands": ["Maricela Booth", "Mayo Morales", "Tamika Cohen"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2346,11 +2182,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-04-15T08:28:54 +04:00",
       "publishedState": false,
-      "brands": [
-        "Roach Gay",
-        "Jodi Smith",
-        "Murphy Larsen"
-      ],
+      "brands": ["Roach Gay", "Jodi Smith", "Murphy Larsen"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2414,11 +2246,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-09-04T12:25:54 +04:00",
       "publishedState": true,
-      "brands": [
-        "Muriel Frank",
-        "Debra Baxter",
-        "Reid Howard"
-      ],
+      "brands": ["Muriel Frank", "Debra Baxter", "Reid Howard"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2493,11 +2321,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-03-08T01:17:05 +05:00",
       "publishedState": false,
-      "brands": [
-        "Christina Mccall",
-        "Hendrix Mcguire",
-        "Montoya Chavez"
-      ],
+      "brands": ["Christina Mccall", "Hendrix Mcguire", "Montoya Chavez"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2572,11 +2396,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-08-02T07:29:39 +04:00",
       "publishedState": false,
-      "brands": [
-        "Simpson Goff",
-        "Ingrid Day",
-        "Gertrude Buckner"
-      ],
+      "brands": ["Simpson Goff", "Ingrid Day", "Gertrude Buckner"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2640,11 +2460,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-02-03T10:02:53 +05:00",
       "publishedState": true,
-      "brands": [
-        "Morrison Bender",
-        "Ana Oneil",
-        "Callahan Schultz"
-      ],
+      "brands": ["Morrison Bender", "Ana Oneil", "Callahan Schultz"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2708,11 +2524,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-02-14T07:38:16 +05:00",
       "publishedState": true,
-      "brands": [
-        "Nellie Parker",
-        "Alyssa Roach",
-        "Nieves Green"
-      ],
+      "brands": ["Nellie Parker", "Alyssa Roach", "Nieves Green"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2754,11 +2566,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-05-25T12:06:26 +04:00",
       "publishedState": true,
-      "brands": [
-        "Osborn Norris",
-        "Ortiz Underwood",
-        "Chang Daniels"
-      ],
+      "brands": ["Osborn Norris", "Ortiz Underwood", "Chang Daniels"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -2833,11 +2641,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-05-17T02:09:00 +04:00",
       "publishedState": true,
-      "brands": [
-        "Deana Gilmore",
-        "Kelly Michael",
-        "Colette Logan"
-      ],
+      "brands": ["Deana Gilmore", "Kelly Michael", "Colette Logan"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -2890,11 +2694,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-02-03T06:49:11 +05:00",
       "publishedState": false,
-      "brands": [
-        "Jeanne Hodges",
-        "Kitty Kramer",
-        "Evans Rich"
-      ],
+      "brands": ["Jeanne Hodges", "Kitty Kramer", "Evans Rich"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -2969,11 +2769,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-07-15T01:01:08 +04:00",
       "publishedState": true,
-      "brands": [
-        "Thompson Mcdowell",
-        "Jenna Rojas",
-        "Matthews Waters"
-      ],
+      "brands": ["Thompson Mcdowell", "Jenna Rojas", "Matthews Waters"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -3048,11 +2844,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-09-15T07:01:11 +04:00",
       "publishedState": true,
-      "brands": [
-        "Sears Frost",
-        "Nunez Burris",
-        "Johnson Serrano"
-      ],
+      "brands": ["Sears Frost", "Nunez Burris", "Johnson Serrano"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -3105,11 +2897,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-08-16T07:28:11 +04:00",
       "publishedState": false,
-      "brands": [
-        "Chrystal Barber",
-        "Stevens Odonnell",
-        "Marci Key"
-      ],
+      "brands": ["Chrystal Barber", "Stevens Odonnell", "Marci Key"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -3184,11 +2972,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-07-06T12:06:43 +04:00",
       "publishedState": false,
-      "brands": [
-        "Nell Mcclain",
-        "Roberts Flores",
-        "Booth Stanley"
-      ],
+      "brands": ["Nell Mcclain", "Roberts Flores", "Booth Stanley"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -3263,11 +3047,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-10-31T10:03:13 +04:00",
       "publishedState": true,
-      "brands": [
-        "Cole Jacobs",
-        "Santiago Todd",
-        "Logan Rosario"
-      ],
+      "brands": ["Cole Jacobs", "Santiago Todd", "Logan Rosario"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3320,11 +3100,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-12-27T11:53:59 +05:00",
       "publishedState": true,
-      "brands": [
-        "Johnnie Wooten",
-        "Ayers Fulton",
-        "Castaneda Vazquez"
-      ],
+      "brands": ["Johnnie Wooten", "Ayers Fulton", "Castaneda Vazquez"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -3388,11 +3164,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-08-22T09:56:06 +04:00",
       "publishedState": false,
-      "brands": [
-        "Aurora Bonner",
-        "Parrish Mccormick",
-        "Rodriquez Shields"
-      ],
+      "brands": ["Aurora Bonner", "Parrish Mccormick", "Rodriquez Shields"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3423,11 +3195,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-11-23T01:22:35 +05:00",
       "publishedState": true,
-      "brands": [
-        "Ryan Mclaughlin",
-        "Holcomb Ramirez",
-        "Lela Houston"
-      ],
+      "brands": ["Ryan Mclaughlin", "Holcomb Ramirez", "Lela Houston"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3502,11 +3270,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-03-01T05:19:28 +05:00",
       "publishedState": true,
-      "brands": [
-        "Vasquez Joyce",
-        "Chan Leonard",
-        "James Gaines"
-      ],
+      "brands": ["Vasquez Joyce", "Chan Leonard", "James Gaines"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -3570,11 +3334,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-09-01T09:08:07 +04:00",
       "publishedState": true,
-      "brands": [
-        "Johanna Klein",
-        "Mcclure Gonzalez",
-        "Solomon Gordon"
-      ],
+      "brands": ["Johanna Klein", "Mcclure Gonzalez", "Solomon Gordon"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3616,11 +3376,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-02-05T05:12:51 +05:00",
       "publishedState": true,
-      "brands": [
-        "Rosanna Herring",
-        "Cara Randall",
-        "Alfreda Carey"
-      ],
+      "brands": ["Rosanna Herring", "Cara Randall", "Alfreda Carey"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3684,11 +3440,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-05-06T10:15:43 +04:00",
       "publishedState": true,
-      "brands": [
-        "Higgins Winters",
-        "Concepcion Frazier",
-        "Fry Higgins"
-      ],
+      "brands": ["Higgins Winters", "Concepcion Frazier", "Fry Higgins"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3741,11 +3493,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-10-07T07:27:07 +04:00",
       "publishedState": true,
-      "brands": [
-        "Miriam Morse",
-        "Shirley Reyes",
-        "Emerson Miles"
-      ],
+      "brands": ["Miriam Morse", "Shirley Reyes", "Emerson Miles"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3809,11 +3557,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-09-04T02:52:41 +04:00",
       "publishedState": true,
-      "brands": [
-        "Audrey Chen",
-        "Byers Walker",
-        "Virgie Greene"
-      ],
+      "brands": ["Audrey Chen", "Byers Walker", "Virgie Greene"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -3844,11 +3588,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-10-22T02:16:26 +04:00",
       "publishedState": false,
-      "brands": [
-        "Sullivan Hood",
-        "Fanny Harrington",
-        "Burgess Meyer"
-      ],
+      "brands": ["Sullivan Hood", "Fanny Harrington", "Burgess Meyer"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3879,11 +3619,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-03-14T05:36:54 +04:00",
       "publishedState": false,
-      "brands": [
-        "Poole Jimenez",
-        "Lorrie Middleton",
-        "Robles Yang"
-      ],
+      "brands": ["Poole Jimenez", "Lorrie Middleton", "Robles Yang"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -3914,11 +3650,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-04-28T10:13:26 +04:00",
       "publishedState": false,
-      "brands": [
-        "Judy Rowe",
-        "Chapman Hoffman",
-        "Nina Rosales"
-      ],
+      "brands": ["Judy Rowe", "Chapman Hoffman", "Nina Rosales"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -3971,11 +3703,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-02-23T06:46:39 +05:00",
       "publishedState": false,
-      "brands": [
-        "Franco Craft",
-        "Hopper Weeks",
-        "Mcknight Spears"
-      ],
+      "brands": ["Franco Craft", "Hopper Weeks", "Mcknight Spears"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4017,11 +3745,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-09-23T04:51:15 +04:00",
       "publishedState": true,
-      "brands": [
-        "Angie Holmes",
-        "Dionne Melton",
-        "Heather Torres"
-      ],
+      "brands": ["Angie Holmes", "Dionne Melton", "Heather Torres"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -4074,11 +3798,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-02-29T11:01:36 +05:00",
       "publishedState": false,
-      "brands": [
-        "Amy Meyers",
-        "Gillespie Kline",
-        "Herminia Phelps"
-      ],
+      "brands": ["Amy Meyers", "Gillespie Kline", "Herminia Phelps"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -4142,11 +3862,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-10-17T07:21:35 +04:00",
       "publishedState": true,
-      "brands": [
-        "Leanne Gentry",
-        "Dawson Estes",
-        "Park Poole"
-      ],
+      "brands": ["Leanne Gentry", "Dawson Estes", "Park Poole"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4210,11 +3926,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-05-01T05:30:09 +04:00",
       "publishedState": false,
-      "brands": [
-        "Elaine Petty",
-        "Stone Golden",
-        "Kelley Oconnor"
-      ],
+      "brands": ["Elaine Petty", "Stone Golden", "Kelley Oconnor"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -4289,11 +4001,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-07-08T03:08:35 +04:00",
       "publishedState": true,
-      "brands": [
-        "Hillary Velez",
-        "Humphrey Christensen",
-        "Figueroa George"
-      ],
+      "brands": ["Hillary Velez", "Humphrey Christensen", "Figueroa George"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -4368,11 +4076,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-12-06T04:02:10 +05:00",
       "publishedState": true,
-      "brands": [
-        "Robbie Montgomery",
-        "Concetta Tanner",
-        "Valencia Richard"
-      ],
+      "brands": ["Robbie Montgomery", "Concetta Tanner", "Valencia Richard"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4447,11 +4151,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-07-13T03:28:38 +04:00",
       "publishedState": true,
-      "brands": [
-        "Rojas Nixon",
-        "Estella Reynolds",
-        "Carroll Olsen"
-      ],
+      "brands": ["Rojas Nixon", "Estella Reynolds", "Carroll Olsen"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4493,11 +4193,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-10-14T08:39:28 +04:00",
       "publishedState": false,
-      "brands": [
-        "Iris Mann",
-        "Vazquez Hebert",
-        "Teresa Hudson"
-      ],
+      "brands": ["Iris Mann", "Vazquez Hebert", "Teresa Hudson"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -4561,11 +4257,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-10-05T12:07:51 +04:00",
       "publishedState": false,
-      "brands": [
-        "Marsh Chase",
-        "Mathis Cabrera",
-        "Aisha Cherry"
-      ],
+      "brands": ["Marsh Chase", "Mathis Cabrera", "Aisha Cherry"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -4629,11 +4321,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-10-20T09:34:18 +04:00",
       "publishedState": true,
-      "brands": [
-        "Castro Lester",
-        "Duran Figueroa",
-        "Gutierrez Fuller"
-      ],
+      "brands": ["Castro Lester", "Duran Figueroa", "Gutierrez Fuller"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -4686,11 +4374,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-06-15T05:22:43 +04:00",
       "publishedState": true,
-      "brands": [
-        "Langley Cash",
-        "Paulette Vega",
-        "Terry Daniel"
-      ],
+      "brands": ["Langley Cash", "Paulette Vega", "Terry Daniel"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -4765,11 +4449,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-04-20T01:47:09 +04:00",
       "publishedState": false,
-      "brands": [
-        "Mckay Webster",
-        "Iva Knapp",
-        "Tommie Murphy"
-      ],
+      "brands": ["Mckay Webster", "Iva Knapp", "Tommie Murphy"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4800,11 +4480,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-10-28T07:16:58 +04:00",
       "publishedState": true,
-      "brands": [
-        "Bryan Randolph",
-        "Marianne Diaz",
-        "Morse Lawson"
-      ],
+      "brands": ["Bryan Randolph", "Marianne Diaz", "Morse Lawson"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4846,11 +4522,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-07-18T03:42:12 +04:00",
       "publishedState": false,
-      "brands": [
-        "Pace Combs",
-        "Joann Graham",
-        "Rosalinda Flynn"
-      ],
+      "brands": ["Pace Combs", "Joann Graham", "Rosalinda Flynn"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4925,11 +4597,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-07-03T04:25:01 +04:00",
       "publishedState": true,
-      "brands": [
-        "Fields Vaughan",
-        "Bishop Gilbert",
-        "Hill Rose"
-      ],
+      "brands": ["Fields Vaughan", "Bishop Gilbert", "Hill Rose"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -4993,11 +4661,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-12-15T05:21:24 +05:00",
       "publishedState": true,
-      "brands": [
-        "Eunice Decker",
-        "Maritza Spencer",
-        "David Valdez"
-      ],
+      "brands": ["Eunice Decker", "Maritza Spencer", "David Valdez"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -5061,11 +4725,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-12-30T02:18:00 +05:00",
       "publishedState": false,
-      "brands": [
-        "Rowena Cooke",
-        "Nielsen Price",
-        "Pacheco Wright"
-      ],
+      "brands": ["Rowena Cooke", "Nielsen Price", "Pacheco Wright"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -5118,11 +4778,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-02-27T07:07:25 +05:00",
       "publishedState": true,
-      "brands": [
-        "Madelyn Larson",
-        "Adrienne Roth",
-        "Hobbs Good"
-      ],
+      "brands": ["Madelyn Larson", "Adrienne Roth", "Hobbs Good"],
       "products": [
         {
           "belongsToBrand": 2,
@@ -5153,11 +4809,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2017-05-07T03:02:06 +04:00",
       "publishedState": false,
-      "brands": [
-        "Shana Thompson",
-        "Hooper Vance",
-        "Pearlie Lang"
-      ],
+      "brands": ["Shana Thompson", "Hooper Vance", "Pearlie Lang"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -5210,11 +4862,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-06-05T12:43:59 +04:00",
       "publishedState": false,
-      "brands": [
-        "Charlene Pacheco",
-        "Workman Rasmussen",
-        "Shannon Morrison"
-      ],
+      "brands": ["Charlene Pacheco", "Workman Rasmussen", "Shannon Morrison"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -5278,11 +4926,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-11-25T07:39:46 +05:00",
       "publishedState": true,
-      "brands": [
-        "Osborne Joseph",
-        "Brown Lowe",
-        "Frances Brady"
-      ],
+      "brands": ["Osborne Joseph", "Brown Lowe", "Frances Brady"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -5346,11 +4990,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-10-04T02:22:59 +04:00",
       "publishedState": true,
-      "brands": [
-        "Elsa Alston",
-        "Odom Savage",
-        "Rose Terrell"
-      ],
+      "brands": ["Elsa Alston", "Odom Savage", "Rose Terrell"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -5392,11 +5032,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2016-11-02T06:28:35 +04:00",
       "publishedState": true,
-      "brands": [
-        "Deirdre Clemons",
-        "Leona Henderson",
-        "Black Love"
-      ],
+      "brands": ["Deirdre Clemons", "Leona Henderson", "Black Love"],
       "products": [
         {
           "belongsToBrand": 0,
@@ -5427,11 +5063,7 @@ const merchants = [
       "logo": "https://www.fillmurray.com/50/50",
       "dateCreated": "2015-05-01T06:28:18 +04:00",
       "publishedState": false,
-      "brands": [
-        "Sawyer Guy",
-        "Bettye Battle",
-        "Jamie Simmons"
-      ],
+      "brands": ["Sawyer Guy", "Bettye Battle", "Jamie Simmons"],
       "products": [
         {
           "belongsToBrand": 1,
@@ -5468,5 +5100,4 @@ const merchants = [
       "companyDescription": "Esse ipsum dolore eiusmod commodo exercitation aliquip laboris. Laboris sunt tempor magna ad nostrud dolore officia et cillum veniam exercitation. Ut officia eiusmod non sint id enim enim excepteur nostrud et voluptate aliqua pariatur. Ut magna dolore magna fugiat do ullamco tempor ipsum sunt do elit sunt cupidatat eiusmod. Culpa laborum adipisicing in consequat velit minim ut nulla mollit exercitation ipsum tempor. Et in ullamco excepteur esse esse laborum id enim elit. Velit in cillum laboris mollit.\r\n"
     }
   ]
-
-  exports.merchants=merchants
+}
