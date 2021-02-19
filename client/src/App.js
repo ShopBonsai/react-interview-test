@@ -1,16 +1,12 @@
-import React, { Component } from 'react'
-import { ApolloProvider } from 'react-apollo';
-import apolloClient from './createApolloClient';
-import Products from './components/Products';
+import { ApolloProvider } from "react-apollo";
+import { client } from "./createApolloClient";
+import { Products } from "./components";
+import React from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <ApolloProvider client={apolloClient}>
-        <Products />
-      </ApolloProvider>
-    )
-  }
-}
-
-export default App;
+export const App = () => {
+  return (
+    <ApolloProvider client={client}>
+      <Products />
+    </ApolloProvider>
+  );
+};
