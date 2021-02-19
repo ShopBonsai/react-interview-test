@@ -1,14 +1,21 @@
 import React, { Component } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider } from 'react-apollo';
 import apolloClient from './createApolloClient';
-import Products from './components/Products';
+
+import Nav from './components/Nav';
+
+import Routes from "./Routes";
 
 class App extends Component {
   render() {
     return (
-      <ApolloProvider client={apolloClient}>
-        <Products />
-      </ApolloProvider>
+      <BrowserRouter>
+        <ApolloProvider client={apolloClient}>
+          <Nav/>
+          <Routes />
+        </ApolloProvider>
+      </BrowserRouter>
     )
   }
 }

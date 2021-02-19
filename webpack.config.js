@@ -27,5 +27,12 @@ module.exports = {
       }
     ]
   },
-  plugins: [htmlPlugin]
+  /** the below is needed for react router if we want to manually change the url to view pages */
+  plugins: [htmlPlugin],
+  output: {
+    publicPath: "/"
+  },
+  devServer: {
+    historyApiFallback: true
+  }
 };

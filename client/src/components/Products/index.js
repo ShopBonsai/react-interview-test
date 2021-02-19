@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media } from 'reactstrap';
+import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media, Spinner } from 'reactstrap';
 import { gql } from 'apollo-boost';
-import { Query } from 'react-apollo';
+import { Query, Mutation } from 'react-apollo';
 import './styles.css';
 
 const GET_PRODUCTS = gql`
@@ -38,11 +38,30 @@ class ProductsList extends Component {
   
     showProducts() {
       const { merchants, merchantsLoading } = this.props;
+
+    if(merchantsLoading) {
+        return (
+            <div className="spinner">
+              <Spinner color="primary" />
+            </div>
+        )
+    }
   
       if (!merchantsLoading && merchants && merchants.length > 0) {
         return merchants.map(({products}) => {
           return products && products.length > 0 && products.map(product => {
-            const { color, description, image, name, price, size } = product
+            const { id, color, description, image, name, price, size } = product;
+
+            const ADD_TO_CART = gql`
+              mutation {
+                cart(userId: "${id}", productId: "${id}", productCount: ${1}) {
+                  userId
+                  productId
+                  productCount
+                }
+              }
+            `;
+
             return (
               <Media key={product.id} className="product-card">
               <Media left href="#">
@@ -54,7 +73,11 @@ class ProductsList extends Component {
                   <CardSubtitle>Color: {color}</CardSubtitle>
                   <CardSubtitle>Size: {size}</CardSubtitle>
                   <CardText>Details: {description}</CardText>
-                  <Button color="primary" size="lg" block>Buy</Button>
+                  <Mutation mutation={ADD_TO_CART}>
+                    {(cart, {loading, err}) => (
+                      <Button color="primary" size="lg" block onClick={() => cart()}>Buy</Button>
+                    )}
+                  </Mutation>
                 </CardBody>
               </Media>
             );

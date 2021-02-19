@@ -30,13 +30,24 @@ const typeDefs = gql`
     image: String
   }
   type User {
+    id: String
+    name: String
+    role: String
+    image: String
+  }
+  type Cart {
     userId: String
+    productId: String
+    productCount: Int
   }
   type Query {
     merchants: [Merchant!]!
+    users: [User!]!
+    user(id: String): User
   }
   type Mutation {
     editMerchant(publishedState: Boolean!): Merchant
+    cart(userId: String, productId: String, productCount: Int): [Cart]
   }
 `;
 
