@@ -1,80 +1,94 @@
-import React, { Component } from 'react';
-import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media } from 'reactstrap';
-import { gql } from 'apollo-boost';
-import { Query } from 'react-apollo';
-import './styles.css';
+import React, { useState } from "react";
+import {
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+  CardBody,
+  Media
+} from "reactstrap";
+import { useQuery, useMutation, gql } from "@apollo/client";
+import { GET_PRODUCTS } from "../queries";
+import { BUY_PRODUCT } from "../mutations";
+import Dropdown from "./Dropdown";
 
-const GET_PRODUCTS = gql`
-  {
-    merchants {
-      guid
-      merchant
-      products {
-        id
-        name
-        price
-        description
-        color
-        size
-        image
-      }
-    }
-  }
-`;
+import "./styles.css";
 
-const withProducts = Component => props => {
+const Product = ({
+  id,
+  image,
+  name,
+  price,
+  color,
+  size,
+  description,
+  quantity = 0
+}) => {
+  const [selectedQuantity, setSelectedQuantity] = useState(quantity);
+  const [buyProduct] = useMutation(BUY_PRODUCT);
+
+  const handleQuantitySelect = ({ target: { value } }) => {
+    setSelectedQuantity(parseInt(value, 10));
+  };
+
+  const handleClickBuy = () => {
+    buyProduct({ variables: { id, quantity: selectedQuantity } });
+  };
+
   return (
-    <Query query={GET_PRODUCTS}>
-      {({ loading, data }) => {
-        return (
-          <Component merchantsLoading={loading} merchants={data && data.merchants} {...props} />
-        );
-      }}
-    </Query>
+    <Media className="product-card">
+      <Media left href="#">
+        <Media object src={image} alt="Product image cap" />
+      </Media>
+      <CardBody>
+        <CardTitle style={{ fontWeight: 600 }}>{name}</CardTitle>
+        <CardTitle>Price: {price}</CardTitle>
+        <CardSubtitle>Color: {color}</CardSubtitle>
+        <CardSubtitle>Size: {size}</CardSubtitle>
+        <CardText>Details: {description}</CardText>
+        {quantity ? (
+          <div className="flex mx-4 items-center">
+            <Button onClick={handleClickBuy} color="primary" size="lg" block>
+              Buy
+            </Button>
+            <div className="mx-2">
+              <Dropdown
+                quantity={quantity}
+                selectedQuantity={selectedQuantity}
+                handleSelect={handleQuantitySelect}
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="flex mx-4">No more items...</div>
+        )}
+      </CardBody>
+    </Media>
   );
 };
 
-class ProductsList extends Component {
-  
-    showProducts() {
-      const { merchants, merchantsLoading } = this.props;
-  
-      if (!merchantsLoading && merchants && merchants.length > 0) {
-        return merchants.map(({products}) => {
-          return products && products.length > 0 && products.map(product => {
-            const { color, description, image, name, price, size } = product
-            return (
-              <Media key={product.id} className="product-card">
-              <Media left href="#">
-                <Media object src={image} alt="Product image cap" />
-                </Media>
-                <CardBody>
-                  <CardTitle style={{fontWeight: 600}}>{name}</CardTitle>
-                  <CardTitle>Price: {price}</CardTitle>
-                  <CardSubtitle>Color: {color}</CardSubtitle>
-                  <CardSubtitle>Size: {size}</CardSubtitle>
-                  <CardText>Details: {description}</CardText>
-                  <Button color="primary" size="lg" block>Buy</Button>
-                </CardBody>
-              </Media>
-            );
-          })
-        });
-      } else {
-        return (
-          <div>
-            <h3>No products available</h3>
-          </div>
-        );
-      }
-    }
-  
-    render() {
-      return (
-        <div>
-          {this.showProducts()}
-        </div>
-      );
-    }
+const Products = () => {
+  const { loading, error, data: { products = [] } = {} } = useQuery(
+    GET_PRODUCTS
+  );
+
+  if (loading) return <p>Loading...</p>;
+  if (error) {
+    return (
+      <div>
+        Something unexpected happened... Maybe refreshing will get it back to
+        the expected state?
+      </div>
+    );
   }
-  export default withProducts(ProductsList)
+
+  return (
+    <div>
+      {products.map(product => (
+        <Product {...product} key={product.id} />
+      ))}
+    </div>
+  );
+};
+
+export default Products;

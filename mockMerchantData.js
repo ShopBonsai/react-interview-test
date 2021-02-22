@@ -5469,4 +5469,4 @@ const merchants = [
     }
   ]
 
-  exports.merchants=merchants
+export default merchants

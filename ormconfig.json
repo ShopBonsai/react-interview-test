@@ -1,0 +1,12 @@
+{
+  "type": "sqlite",
+  "database": "server/db/bonsai.sqlite",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["server/db/entity/**/*.ts"],
+  "migrations": ["server/db/migrations/*.ts"],
+  "subscribers": ["server/db/subscriber/**/*.ts"],
+  "cli": {
+    "migrationsDir": "server/db/migrations"
+  }
+}
