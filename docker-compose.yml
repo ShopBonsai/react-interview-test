@@ -1,0 +1,42 @@
+version: '3.4'
+services:
+  bonsai-app:
+    container_name: bonsai-app
+    build: .
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    depends_on:
+      - mongo-bonsai-db
+    links:
+      - mongo-bonsai-db
+    environment:
+      MONGO_HOST: host.docker.internal
+      MONGO_DB: bonsai-shop
+      MONGO_PORT: 27019
+      WAIT_HOSTS: mongo-bonsai-db:27019
+    networks:
+      - app-network
+
+  mongo-bonsai-db:
+    container_name: mongo-bonsai-db
+    image: mongo:4.4
+    restart: always
+    ports:
+      - "27019:27017"
+    volumes:
+      - ./server/db/mongo/mongo_db_init.js:/docker-entrypoint-initdb.d/mongo_db_init.js
+      - ./server/db/mongo/health-check.sh:/usr/local/bin/health-check.sh
+      - ./server/db/mongo/mongod.conf:/etc/mongo/mongod.conf
+    healthcheck:
+      test: ["CMD", "curl", "-f", "mongo:27019"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

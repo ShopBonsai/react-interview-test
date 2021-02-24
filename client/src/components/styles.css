@@ -3,5 +3,75 @@
     margin: 30px auto;
     cursor: pointer;
     color: grey;
-    box-shadow: 1px 2px 3px rgba(136,10,142,0.3);
-  }
+    box-shadow: 1px 2px 3px rgba(136, 10, 142, 0.3);
+}
+.media-object {
+    margin-top: 27px;
+}
+.bar {
+    box-shadow: 1px 2px 3px rgba(136, 10, 142, 0.3);
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.notifier-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    z-index: 1;
+}
+
+.cart-sidebar {
+    border-left: 1px grey solid;
+    height: 100%;
+    padding: 16px;
+}
+
+ul {
+    list-style-type: none !important;
+    padding: 0;
+}
+
+li.cart-item {
+    margin-bottom: 8px;
+}
+
+li.cart-item > div > p {
+    margin: 0;
+}
+
+.cart-summary-wrapper {
+    width: 100%;
+}
+
+.cart-summary {
+    width: 100%;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 2.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.button-group {
+    width: 100%;
+}
+.center-spinner {
+    position: absolute;
+    top: 50vh;
+    right: 50vh;
+}
+/*OVERRIDES*/
+.btn-block + .btn-block {
+    margin-top: 0 !important;
+}
+.like-color {
+    background-color: rgba(255, 43, 113, 0.64) !important;
+    border-color: rgba(255, 43, 113, 0.64) !important;
+}
