@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@apollo/client": "^3.3.11",
     "apollo-boost": "^0.4.3",
     "apollo-server-express": "^2.7.0",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "graphql": "^14.4.2",
     "react": "^16.8.6",
-    "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.1"
   },

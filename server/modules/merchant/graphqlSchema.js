@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require('apollo-server-express')
 
 const typeDefs = gql`
   type Merchant {
@@ -30,14 +30,33 @@ const typeDefs = gql`
     image: String
   }
   type User {
-    userId: String
+    id: ID!
+    name: String
+    birthday: String
+    address: Address
+    image: String
+    cart: Cart
+  }
+  type Address {
+    street: String
+    city: String
+    province: String
+    country: String
+    postal: String
+  }
+  type Cart {
+    products: [Product]
   }
   type Query {
     merchants: [Merchant!]!
+    products(name: String, color: String, size: String): [Product!]!
+    cart: [Product!]!
   }
   type Mutation {
-    editMerchant(publishedState: Boolean!): Merchant
+    editMerchant(index: Int, publishedState: Boolean!): Merchant!
+    addToCart(productId: String, quantity: Int): Cart!
+    removeFromCart(productId: String): Cart!
   }
-`;
+`
 
-module.exports = typeDefs;
+module.exports = typeDefs

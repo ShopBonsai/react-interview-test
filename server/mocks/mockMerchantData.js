@@ -1,4 +1,4 @@
-const merchants = [
+module.exports = [
     {
       "index": 0,
       "guid": "8b36dad9-f5a5-4b35-bfc9-27990a0be2b2",
@@ -5468,5 +5468,3 @@ const merchants = [
       "companyDescription": "Esse ipsum dolore eiusmod commodo exercitation aliquip laboris. Laboris sunt tempor magna ad nostrud dolore officia et cillum veniam exercitation. Ut officia eiusmod non sint id enim enim excepteur nostrud et voluptate aliqua pariatur. Ut magna dolore magna fugiat do ullamco tempor ipsum sunt do elit sunt cupidatat eiusmod. Culpa laborum adipisicing in consequat velit minim ut nulla mollit exercitation ipsum tempor. Et in ullamco excepteur esse esse laborum id enim elit. Velit in cillum laboris mollit.\r\n"
     }
   ]
-
-  exports.merchants=merchants
