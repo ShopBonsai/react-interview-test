@@ -1,5 +1,30 @@
 # Bonsai React Interview Test
 
+A few notes:
+- This was my first time using Apollo client; I spent some time getting familiar with the Component API for `<Query>` and `<Mutation>` and wiring up the resolvers with Apollo. (My previous GraphQL exposure has been with Gatsby, Contentful, and various markdown content blocks.)
+- I did weigh the idea of migrating to the `useQuery`/`useMutation` hooks since `<Query>/<Mutation>` are deprecated, but I wanted to focus on the aspects relevant to users of the site.
+
+## Additions
+
+**Navigation**
+
+I used `react-router-dom` to add the new Merchant view alongside the existing Products view.
+
+**Manage Store**
+
+I added a second view for Merchants to manage their account and their products, in addition to supporting the Customer-facing view within the same web app.
+
+* Edit Merchant name, description, etc. and save in the backend with GraphQL 
+* Remove products from the backend with GraphQL
+
+**Cosmetic**
+
+I swapped out the `Loading...` message with a spinner.
+
+I added some Bonsai-coloured confetti ([`react-confetti`](https://www.npmjs.com/package/react-confetti)) to add some life amid the reactstrap-powered UI.
+
+<hr />
+
 Welcome to the creative interview test at Shop Bonsai.
 
 This interview test simulates an environment that is similar to working at Shop Bonsai (very similar tech stack we run today). 

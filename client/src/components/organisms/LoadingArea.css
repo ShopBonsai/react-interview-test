@@ -1,0 +1,7 @@
+.loading-area {
+  display: flex;
+}
+
+.loading-area > * {
+  margin: 40px auto;
+}

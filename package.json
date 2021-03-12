@@ -11,7 +11,10 @@
     "graphql": "^14.4.2",
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
+    "react-confetti": "^6.0.1",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
+    "react-use": "^17.2.1",
     "reactstrap": "^8.0.1"
   },
   "scripts": {

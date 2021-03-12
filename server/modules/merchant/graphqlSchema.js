@@ -34,9 +34,18 @@ const typeDefs = gql`
   }
   type Query {
     merchants: [Merchant!]!
+    merchant(guid: String!): Merchant!
   }
   type Mutation {
-    editMerchant(publishedState: Boolean!): Merchant
+    editMerchantWithGuid(
+      guid: String!
+      merchant: String!
+      contactEmail: String!
+      phone: String!
+      address: String!
+      companyDescription: String!
+    ): Merchant
+    deleteProductWithId(id: String!): String!
   }
 `;
 
