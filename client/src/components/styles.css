@@ -1,7 +1,51 @@
 .product-card {
-    width: 50%;
-    margin: 30px auto;
-    cursor: pointer;
-    color: grey;
-    box-shadow: 1px 2px 3px rgba(136,10,142,0.3);
+  width: 50%;
+  margin: 30px auto;
+  cursor: pointer;
+  color: grey;
+  box-shadow: 1px 2px 3px rgba(136,10,142,0.3);
+}
+
+/* 
+ * Given more time, CSS Modules are a good way to prevent clashing CSS 
+ * For now, I will add my custom CSS here 
+*/
+
+.display-name {
+  padding: 1em;
+  font-family: monospace;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.login-form {
+  padding: 1em;
+  font-family: monospace;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0 auto;
+}
+
+.login-form label {
+  font-weight: 800;
+  font-size: 18px;
+}
+.login-form label p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.failed-input,
+.form-control.failed-input,
+.form-control.failed-input:active,
+.form-control.failed-input:focus {
+  border: 1px solid red;
+}
+
+@media (min-width: 768px) {
+  .display-name {
+    font-size: 1.6em;
   }
+}
