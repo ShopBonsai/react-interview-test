@@ -56,3 +56,19 @@ Thank you and good luck for everyone who applied and submitted a PR.
 It should look like this initially:
 ![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/react-interview-test/master/docs/shopPage.gif)
 
+
+
+
+
+
+## Notes from Jonathon
+
+Hi! I wish i had more time to spend on this to add additional functionality such as giving proper types, auth and some testing. Alas, this is all I have time for right now. The main focus for me on this exercise was scalability and showing some of the virtual features with GraphQL and Mongo DB. Summary of what I did.
+
+- Upgraded to typescript (but did not have time to type)
+- Setup mongoDB and generated large amount of test data  mongoDB URI => MONGO_URI=mongodb+srv://bonsai:bCL141vW2tFBMxWZ@cluster0.ndfky.mongodb.net/bonsai?retryWrites=true&w=majority
+- Setup field resolvers to support nested queries (putting the graph in graphql) between Merchants, Brands and Products
+- Modeled DB schema/models to be scalable such that many records can be crated, vs the nested nature of the test JSON
+- Setup data models to be accesable via Apollo server context.
+- Setup pagination for Products which can also be used at the field level
+- Showcased virtual features of GraphQL, ex dateCreated guid
