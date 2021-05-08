@@ -1,0 +1,29 @@
+// Having issues connecting with Apollo
+
+// import React from 'react';
+// import { render, cleanup } from '@testing-library/react';
+// import '@testing-library/jest-dom';
+// import { ApolloProvider } from 'react-apollo';
+// import apolloClient from '../../createApolloClient';
+// import { Provider } from 'react-redux';
+// import store from '../../store';
+// import Products from '.';
+
+// describe('Products Component', () => {
+//   let productComponent;
+
+//   beforeEach(() => {
+//     productComponent = () => (
+//       <Provider store={store}>
+//         <ApolloProvider client={apolloClient}>
+//           <Products />
+//         </ApolloProvider>
+//       </Provider>
+//     );
+//   });
+
+//   afterEach(cleanup);
+
+//   it('renders without crashing', () => {
+//     render(productComponent());
+//   });
