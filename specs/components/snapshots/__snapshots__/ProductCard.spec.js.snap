@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Card component snapshot tests should render correctly 1`] = `
+<div
+  className="product-card media"
+>
+  <a
+    className="media-left"
+    href="#"
+  >
+    <img
+      alt="Product image cap"
+      className="img-tile media-object"
+      src="www.fakeurl.com/img.png"
+    />
+  </a>
+  <div
+    className="card-body"
+  >
+    <div
+      className="text-title card-title"
+    >
+      product title
+    </div>
+    <div
+      className="card-title"
+    >
+      Price: $
+      19.00
+    </div>
+    <div
+      className="card-subtitle"
+    >
+      Color: 
+      #424242
+    </div>
+    <div
+      className="card-subtitle"
+    >
+      Size: 
+      sm
+    </div>
+    <div
+      className="card-subtitle"
+    >
+      Quantity: 
+      5
+    </div>
+    <p
+      className="card-text"
+    >
+      Details: 
+      words words words words words words words words words words 
+    </p>
+    <button
+      aria-label={null}
+      className="btn btn-primary btn-lg btn-block"
+      onClick={[Function]}
+    >
+      Buy
+    </button>
+  </div>
+</div>
+`;

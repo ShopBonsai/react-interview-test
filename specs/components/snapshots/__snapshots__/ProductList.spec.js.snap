@@ -1,0 +1,986 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product List component snapshot tests should render the loading state 1`] = `
+<div>
+  <div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "height": "100vh",
+          "width": "100vw",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": "10px",
+            "boxShadow": "5px 5px 15px rgb(136 10 142 / 40%)",
+            "display": "flex",
+            "flexDirection": "column",
+            "margin": "auto",
+            "padding": "2rem",
+          }
+        }
+      >
+        <h3
+          style={
+            Object {
+              "marginBottom": "1rem",
+            }
+          }
+        >
+          Loading products...
+        </h3>
+        <div
+          className="spinner-border text-primary"
+          role="status"
+          style={
+            Object {
+              "height": "3rem",
+              "width": "3rem",
+            }
+          }
+        >
+          <span
+            className="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Product List component snapshot tests should render the product list of returned merchants 1`] = `
+<div>
+  <div
+    className="container-fluid"
+    style={
+      Object {
+        "borderRadius": "10px",
+        "boxShadow": "5px 5px 10px rgb(136 10 142 / 40%)",
+        "margin": "1rem",
+        "width": "95%",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-4"
+        style={
+          Object {
+            "padding": "2rem",
+          }
+        }
+      >
+        <div
+          className="row"
+        >
+          <img
+            alt=" Merchant logo"
+            className="icon media-object"
+            src="www.url.com/logo.png"
+          />
+          <div
+            className="text-title card-title"
+          >
+            Vandelay Industries
+          </div>
+        </div>
+        <p
+          className="card-text"
+        >
+          About 
+          Vandelay Industries
+          : 
+          A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description 
+        </p>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container-fluid"
+    style={
+      Object {
+        "borderRadius": "10px",
+        "boxShadow": "5px 5px 10px rgb(136 10 142 / 40%)",
+        "margin": "1rem",
+        "width": "95%",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-4"
+        style={
+          Object {
+            "padding": "2rem",
+          }
+        }
+      >
+        <div
+          className="row"
+        >
+          <img
+            alt=" Merchant logo"
+            className="icon media-object"
+            src="www.url.com/logo.png"
+          />
+          <div
+            className="text-title card-title"
+          >
+            Vandelay Industries
+          </div>
+        </div>
+        <p
+          className="card-text"
+        >
+          About 
+          Vandelay Industries
+          : 
+          A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description 
+        </p>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container-fluid"
+    style={
+      Object {
+        "borderRadius": "10px",
+        "boxShadow": "5px 5px 10px rgb(136 10 142 / 40%)",
+        "margin": "1rem",
+        "width": "95%",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-4"
+        style={
+          Object {
+            "padding": "2rem",
+          }
+        }
+      >
+        <div
+          className="row"
+        >
+          <img
+            alt=" Merchant logo"
+            className="icon media-object"
+            src="www.url.com/logo.png"
+          />
+          <div
+            className="text-title card-title"
+          >
+            Vandelay Industries
+          </div>
+        </div>
+        <p
+          className="card-text"
+        >
+          About 
+          Vandelay Industries
+          : 
+          A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description 
+        </p>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container-fluid"
+    style={
+      Object {
+        "borderRadius": "10px",
+        "boxShadow": "5px 5px 10px rgb(136 10 142 / 40%)",
+        "margin": "1rem",
+        "width": "95%",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-4"
+        style={
+          Object {
+            "padding": "2rem",
+          }
+        }
+      >
+        <div
+          className="row"
+        >
+          <img
+            alt=" Merchant logo"
+            className="icon media-object"
+            src="www.url.com/logo.png"
+          />
+          <div
+            className="text-title card-title"
+          >
+            Vandelay Industries
+          </div>
+        </div>
+        <p
+          className="card-text"
+        >
+          About 
+          Vandelay Industries
+          : 
+          A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description 
+        </p>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+        <div
+          className="product-card media"
+        >
+          <a
+            className="media-left"
+            href="#"
+          >
+            <img
+              alt="Product image cap"
+              className="img-tile media-object"
+              src="www.fakeurl.com/img.png"
+            />
+          </a>
+          <div
+            className="card-body"
+          >
+            <div
+              className="text-title card-title"
+            >
+              product title
+            </div>
+            <div
+              className="card-title"
+            >
+              Price: $
+              19.00
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Color: 
+              #424242
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Size: 
+              sm
+            </div>
+            <div
+              className="card-subtitle"
+            >
+              Quantity: 
+              5
+            </div>
+            <p
+              className="card-text"
+            >
+              Details: 
+              words words words words words words words words words words 
+            </p>
+            <button
+              aria-label={null}
+              className="btn btn-primary btn-lg btn-block"
+              onClick={[Function]}
+            >
+              Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

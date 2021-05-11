@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot should render correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100vh",
+        "width": "100vw",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": "10px",
+          "boxShadow": "5px 5px 15px rgb(136 10 142 / 40%)",
+          "display": "flex",
+          "flexDirection": "column",
+          "margin": "auto",
+          "padding": "2rem",
+        }
+      }
+    >
+      <h3
+        style={
+          Object {
+            "marginBottom": "1rem",
+          }
+        }
+      >
+        Loading products...
+      </h3>
+      <div
+        className="spinner-border text-primary"
+        role="status"
+        style={
+          Object {
+            "height": "3rem",
+            "width": "3rem",
+          }
+        }
+      >
+        <span
+          className="sr-only"
+        >
+          Loading...
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

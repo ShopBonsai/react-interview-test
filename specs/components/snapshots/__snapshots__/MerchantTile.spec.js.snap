@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Merchant Tile component snapshot tests should not render if the merchant has not been published 1`] = `null`;
+
+exports[`Merchant Tile component snapshot tests should render correctly 1`] = `
+<div
+  className="container-fluid"
+  style={
+    Object {
+      "borderRadius": "10px",
+      "boxShadow": "5px 5px 10px rgb(136 10 142 / 40%)",
+      "margin": "1rem",
+      "width": "95%",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-4"
+      style={
+        Object {
+          "padding": "2rem",
+        }
+      }
+    >
+      <div
+        className="row"
+      >
+        <img
+          alt=" Merchant logo"
+          className="icon media-object"
+          src="www.url.com/logo.png"
+        />
+        <div
+          className="text-title card-title"
+        >
+          Vandelay Industries
+        </div>
+      </div>
+      <p
+        className="card-text"
+      >
+        About 
+        Vandelay Industries
+        : 
+        A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description A longer description 
+      </p>
+    </div>
+    <div
+      className="col-sm-7"
+    >
+      <div
+        className="product-card media"
+      >
+        <a
+          className="media-left"
+          href="#"
+        >
+          <img
+            alt="Product image cap"
+            className="img-tile media-object"
+            src="www.fakeurl.com/img.png"
+          />
+        </a>
+        <div
+          className="card-body"
+        >
+          <div
+            className="text-title card-title"
+          >
+            product title
+          </div>
+          <div
+            className="card-title"
+          >
+            Price: $
+            19.00
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Color: 
+            #424242
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Size: 
+            sm
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Quantity: 
+            5
+          </div>
+          <p
+            className="card-text"
+          >
+            Details: 
+            words words words words words words words words words words 
+          </p>
+          <button
+            aria-label={null}
+            className="btn btn-primary btn-lg btn-block"
+            onClick={[Function]}
+          >
+            Buy
+          </button>
+        </div>
+      </div>
+      <div
+        className="product-card media"
+      >
+        <a
+          className="media-left"
+          href="#"
+        >
+          <img
+            alt="Product image cap"
+            className="img-tile media-object"
+            src="www.fakeurl.com/img.png"
+          />
+        </a>
+        <div
+          className="card-body"
+        >
+          <div
+            className="text-title card-title"
+          >
+            product title
+          </div>
+          <div
+            className="card-title"
+          >
+            Price: $
+            19.00
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Color: 
+            #424242
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Size: 
+            sm
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Quantity: 
+            5
+          </div>
+          <p
+            className="card-text"
+          >
+            Details: 
+            words words words words words words words words words words 
+          </p>
+          <button
+            aria-label={null}
+            className="btn btn-primary btn-lg btn-block"
+            onClick={[Function]}
+          >
+            Buy
+          </button>
+        </div>
+      </div>
+      <div
+        className="product-card media"
+      >
+        <a
+          className="media-left"
+          href="#"
+        >
+          <img
+            alt="Product image cap"
+            className="img-tile media-object"
+            src="www.fakeurl.com/img.png"
+          />
+        </a>
+        <div
+          className="card-body"
+        >
+          <div
+            className="text-title card-title"
+          >
+            product title
+          </div>
+          <div
+            className="card-title"
+          >
+            Price: $
+            19.00
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Color: 
+            #424242
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Size: 
+            sm
+          </div>
+          <div
+            className="card-subtitle"
+          >
+            Quantity: 
+            5
+          </div>
+          <p
+            className="card-text"
+          >
+            Details: 
+            words words words words words words words words words words 
+          </p>
+          <button
+            aria-label={null}
+            className="btn btn-primary btn-lg btn-block"
+            onClick={[Function]}
+          >
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
