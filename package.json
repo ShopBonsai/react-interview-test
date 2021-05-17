@@ -1,36 +1,46 @@
 {
-  "name": "bonsai-interview",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "apollo-boost": "^0.4.3",
-    "apollo-server-express": "^2.7.0",
-    "bootstrap": "^4.3.1",
-    "express": "^4.17.1",
-    "graphql": "^14.4.2",
-    "react": "^16.8.6",
-    "react-apollo": "^2.5.8",
-    "react-dom": "^16.8.6",
-    "reactstrap": "^8.0.1"
-  },
-  "scripts": {
-    "server": "nodemon ./server/server.js",
-    "client": "webpack-dev-server --mode development --open",
-    "dev": "concurrently \"yarn client\" \"yarn server\""
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-decorators": "^7.4.4",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "concurrently": "^4.1.1",
-    "css-loader": "^3.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "nodemon": "^1.19.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
-  }
+   "name": "bonsai-interview",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "dependencies": {
+      "apollo-boost": "^0.4.9",
+      "apollo-server": "^2.24.0",
+      "apollo-server-express": "^2.24.0",
+      "bootstrap": "^5.0.1",
+      "express": "^4.17.1",
+      "graphql": "^15.5.0",
+      "pg": "^8.6.0",
+      "react": "^17.0.2",
+      "react-apollo": "^3.1.5",
+      "react-dom": "^17.0.2",
+      "reactstrap": "^8.9.0",
+      "reflect-metadata": "^0.1.13",
+      "type-graphql": "^1.1.1",
+      "typeorm": "^0.2.32"
+   },
+   "scripts": {
+      "server": "nodemon -w src --ext ts --exec ts-node ./src/server/server.ts",
+      "client": "webpack serve --mode development --open",
+      "dev": "concurrently \"yarn client\" \"yarn server\"",
+      "seed": "ts-node ./src/server/seeder/index.ts",
+      "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+   },
+   "devDependencies": {
+      "@babel/core": "^7.14.2",
+      "@babel/plugin-proposal-decorators": "^7.14.2",
+      "@babel/preset-react": "^7.13.13",
+      "@types/node": "^15.3.0",
+      "babel-loader": "^8.2.2",
+      "concurrently": "^6.1.0",
+      "css-loader": "^5.2.4",
+      "html-webpack-plugin": "^5.3.1",
+      "nodemon": "^2.0.7",
+      "style-loader": "^2.0.0",
+      "ts-node": "9.1.1",
+      "typescript": "^4.2.4",
+      "webpack": "^5.37.0",
+      "webpack-cli": "^4.7.0",
+      "webpack-dev-server": "^3.11.2"
+   }
 }

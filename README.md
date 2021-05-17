@@ -56,3 +56,7 @@ Thank you and good luck for everyone who applied and submitted a PR.
 It should look like this initially:
 ![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/react-interview-test/master/docs/shopPage.gif)
 
+## Postgres and migrations
+- spin up postgres through `docker-compose up` this will create an empty database
+- to execute pending migrations do `npm run typeorm migration:run`
+- run `npm run seed` to seed the database with mock data

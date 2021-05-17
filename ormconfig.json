@@ -1,0 +1,24 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "postgres",
+   "password": "postgres",
+   "database": "bonsai_test",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "src/server/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/server/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/server/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/server/entity",
+      "migrationsDir": "src/server/migration",
+      "subscribersDir": "src/server/subscriber"
+   }
+}
