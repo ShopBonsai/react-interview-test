@@ -32,11 +32,21 @@ const typeDefs = gql`
   type User {
     userId: String
   }
+  input OrderInput {
+    id: String!
+    quantity: Int!
+  }
+  type AddToCartResponse {
+    success: Boolean!
+    message: String!
+    totalNumberOfCartItems: Int!
+  }
   type Query {
     merchants: [Merchant!]!
   }
   type Mutation {
     editMerchant(publishedState: Boolean!): Merchant
+    addToCart(product: OrderInput!): AddToCartResponse
   }
 `;
 

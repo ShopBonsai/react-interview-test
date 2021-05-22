@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { CardTitle, CardSubtitle, CardText, Button, CardBody, Media } from 'reactstrap';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import './styles.css';
+import { ProductSkeleton, Product } from './';
 
 const GET_PRODUCTS = gql`
   {
@@ -17,6 +17,7 @@ const GET_PRODUCTS = gql`
         color
         size
         image
+        quantity
       }
     }
   }
@@ -38,26 +39,19 @@ class ProductsList extends Component {
   
     showProducts() {
       const { merchants, merchantsLoading } = this.props;
-  
+      if (merchantsLoading) {
+				return [...Array(3)].map((elem, i) => <ProductSkeleton key={i}/>)
+			}
       if (!merchantsLoading && merchants && merchants.length > 0) {
         return merchants.map(({products}) => {
           return products && products.length > 0 && products.map(product => {
-            const { color, description, image, name, price, size } = product
             return (
-              <Media key={product.id} className="product-card">
-              <Media left href="#">
-                <Media object src={image} alt="Product image cap" />
-                </Media>
-                <CardBody>
-                  <CardTitle style={{fontWeight: 600}}>{name}</CardTitle>
-                  <CardTitle>Price: {price}</CardTitle>
-                  <CardSubtitle>Color: {color}</CardSubtitle>
-                  <CardSubtitle>Size: {size}</CardSubtitle>
-                  <CardText>Details: {description}</CardText>
-                  <Button color="primary" size="lg" block>Buy</Button>
-                </CardBody>
-              </Media>
-            );
+							<Product
+								product={product}
+								key={product.id}
+								updateCart={this.props.updateCart}
+							/>
+						);
           })
         });
       } else {
